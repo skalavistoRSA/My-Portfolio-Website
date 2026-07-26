@@ -268,25 +268,7 @@ footer {
     margin-bottom: 20px;   /* Pushes the text down slightly below the picture */
     box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Gives it a subtle 3D pop off the background */
 }
-/* Hero Buttons Layout */
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Adds clean spacing between the two buttons */
-    margin-top: 20px;
-}
 
-/* Secondary Button Style (For 'View Portfolio') */
-.secondary-btn {
-    background-color: transparent;
-    border: 2px solid var(--primary-color);
-    color: #ffffff;
-}
-
-.secondary-btn:hover {
-    background-color: var(--primary-color);
-    color: #ffffff;
-}
 
 /* Responsive adjustment for small phone screens */
 @media (max-width: 480px) {
