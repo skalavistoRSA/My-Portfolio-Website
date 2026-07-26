@@ -159,7 +159,26 @@
 
 
 
-    
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        // Toggles the dropdown menu open and closed
+        navLinks.classList.toggle('active');
+      });
+
+      // Automatically close menu when user taps a link
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+    }
+  });
+</script>
 
 </body>
 </html>
