@@ -33,30 +33,6 @@
 
 
 
-    <script>
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-
-  // Toggle mobile menu visibility
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-
-  // Close the menu when any link inside it is clicked
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-    });
-  });
-</script>
-
-
-
-
-
-
-
-
   <!-- Hero / Intro Section (Updated with Profile Picture) -->
     <section class="hero-section">
         <div class="hero-content">
@@ -177,6 +153,25 @@
     <footer>
         <p>&copy; 2026 Codebase Portfolio. Built with clean HTML & CSS.</p>
     </footer>
+
+
+
+    <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  // Toggle mobile menu visibility
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Close the menu when any link inside it is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
+</script>
 
 </body>
 </html>
