@@ -261,7 +261,7 @@ footer {
 /* Profile Image Styles */
 .profile-img {
     width: 300px;          /* Controls the width of the picture */
-    height: 300px;         /* Controls the height of the picture */
+    height: 250px;         /* Controls the height of the picture */
     border-radius: 50%;    /* This cuts the corners to make it a perfect circle */
     object-fit: cover;     /* Prevents your photo from looking squished or stretched */
     border: 4px solid var(--primary-color); /* Adds a clean blue border matching your layout */
