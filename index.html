@@ -13,8 +13,7 @@
 
     <header>
         <header class="navbar">
-  
-  <a href="#" class="logo">SKALA<span style="color: #e5e8ec;">.dev</span></a>
+<a href="#" class="logo">SKALA<span style="color: #dfe3e8;">.dev</span></a>
 
   <!-- The Hamburger Button -->
   <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
@@ -33,7 +32,21 @@
 </header>
     </header>
 
- 
+ <script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  // Toggle mobile menu visibility
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Close the menu when any link inside it is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
 </script>
 
   <!-- Hero / Intro Section (Updated with Profile Picture) -->
@@ -159,26 +172,7 @@
 
 
 
-    <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    if (hamburger && navLinks) {
-      hamburger.addEventListener('click', () => {
-        // Toggles the dropdown menu open and closed
-        navLinks.classList.toggle('active');
-      });
-
-      // Automatically close menu when user taps a link
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-          navLinks.classList.remove('active');
-        });
-      });
-    }
-  });
-</script>
+    
 
 </body>
 </html>
