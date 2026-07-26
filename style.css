@@ -502,7 +502,7 @@ header, nav, .navbar {
     top: 100%; /* Drop down right below the navbar header */
     left: 0;
     width: 100%;
-    background-color: #d3d7e0; /* Background color of dropdown menu */
+    background-color: #0b1120; /* Background color of dropdown menu */
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
