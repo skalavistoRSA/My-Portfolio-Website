@@ -439,3 +439,81 @@ header, nav, .navbar {
 
 
 
+
+
+
+/* --- Desktop Default Styles --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0b1120; /* Adjust to match your navbar background */
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hide the hamburger icon on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+  /* Show hamburger button on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide the links menu by default on mobile */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Drop down right below the navbar header */
+    left: 0;
+    width: 100%;
+    background-color: #0b1120; /* Background color of dropdown menu */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-links li {
+    margin: 12px 0;
+  }
+
+  /* Class added via JavaScript when clicked */
+  .nav-links.active {
+    display: flex;
+  }
+}
