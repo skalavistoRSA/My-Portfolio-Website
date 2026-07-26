@@ -439,35 +439,3 @@ header, nav, .navbar {
 
 
 
-@media (max-width: 768px) {
-  /* 1. Header Layout: Stack logo and nav vertically so no links get cut off */
-  header, nav, .navbar {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding: 15px 10px;
-  }
-
-  /* Wrap links cleanly if needed, or wrap them into 2 columns/rows */
-  nav ul, .nav-links {
-    display: flex;
-    flex-wrap: wrap; /* Allows "Projects" & "Contact" to wrap to a 2nd row if needed */
-    justify-content: center;
-    gap: 15px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  nav ul li a, .nav-links a {
-    font-size: 0.95rem; /* Keeps links easy to read and tap */
-  }
-
-  /* 2. Profile Picture Fix: Bring back a nice, visible size on mobile */
-  .profile-img, img {
-    width: 250px !important;  /* Sets a solid size on mobile */
-    height: 250px !important; /* Keeps it perfectly round */
-    max-width: 80vw;          /* Makes sure it never exceeds screen width */
-    object-fit: cover;
-  }
-}
