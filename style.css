@@ -517,3 +517,59 @@ header, nav, .navbar {
     display: flex;
   }
 }
+
+
+/*pp update*/
+
+/* --- FIX 1: Logo Visibility --- */
+.logo {
+  color: #ffffff !important; /* Force text to be bright white */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1001; /* Keeps logo on top */
+}
+
+/* --- FIX 2: Profile Picture (Perfect Circle) --- */
+.profile-img, img.profile-pic {
+  width: 240px !important;
+  height: 240px !important; /* MUST match width exactly for 1:1 square ratio */
+  border-radius: 50% !important; /* Makes it a perfect circle */
+  object-fit: cover !important; /* Prevents image stretching/squishing */
+  border: 3px solid #007bff; /* Keeps your blue ring */
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- FIX 3: Hamburger Button & Dropdown Menu --- */
+.navbar {
+  position: relative;
+  z-index: 1000; /* Ensures navbar sits ABOVE hero content */
+}
+
+.hamburger {
+  z-index: 1001; /* Keeps button clickable above everything else */
+  cursor: pointer;
+}
+
+/* Mobile Dropdown Menu Styling */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Displays directly under navbar */
+    left: 0;
+    width: 100%;
+    background-color: #0b1120; /* Dark background so text is readable */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+
+  /* This active class is added by JS when clicked */
+  .nav-links.active {
+    display: flex !important;
+  }
+}
