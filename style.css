@@ -352,3 +352,35 @@ footer {
 .icon-db i { color: #00758f; }       /* Standard Database Teal */
 .icon-azure i { color: #0078d4; }    /* Microsoft Corporate Azure Blue */
  
+/*26 july 2026 new update about buttons */
+/* Container for the buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center; /* Center them horizontally */
+  align-items: center;
+  gap: 15px;               /* Creates space BETWEEN buttons */
+  margin-top: 25px;
+  flex-wrap: wrap;         /* Allows stacking on small screens */
+}
+
+/* Base button styles */
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #007bff; /* Matching your blue accent */
+  color: #ffffff;
+  border: none;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
